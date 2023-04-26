@@ -1,0 +1,123 @@
+/* links containers will be hidden
+height: 0
+overflow: hidden */
+
+/* el backgound image debe tener 0 margen junto con el navbar y los demas elementos deben tener 0 de margen( estar pegaditos) */
+li{
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.background-image {
+    background-image: url("./images/image.png.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 37, 29, 0.6);
+}
+.nav{
+    padding: 1rem 1.5rem;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 96%;
+}
+
+.show-links{
+    height: 200px;
+}
+
+.logo{
+    height: 50px;
+}
+
+.nav-header {
+    padding: 0;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.links-container {
+    display: flex;
+    height: auto !important;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.links{
+    list-style-type: none;
+    font-size: 40px;
+    display: flex;
+}
+
+.top-link {
+    /* es el botton para volver a subir por la pagina */
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius:var(--radius);
+    animation: bounce 2s ease-in-out infinite;
+
+    visibility: hidden;
+    z-index: -100;
+}
+
+.show-link {
+    visibility: visible;
+    z-index: 100;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.lorem {
+    text-align: center;
+}
+
+.section{
+    text-align: center;
+    height: 1000px;
+}
+
+.section footer{
+    height: 500px;
+}
+
+/*? global */
+html{
+    scroll-behavior: smooth;
+}
