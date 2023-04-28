@@ -55,7 +55,7 @@ window.addEventListener("scroll",function (){
 //? offsetTop un numero que representa el posicionamiento top del elemento en pixeles
 //? select links
 
-/*
+
 const scrollLinks = document.querySelectorAll('.scroll-link');
 scrollLinks.forEach(function(links){
     links.addEventListener("click", function (e) {
@@ -83,6 +83,4 @@ scrollLinks.forEach(function(links){
         });
         linksContainer.style.height = 0;
     });
-});*/
-
-alert('hola mundo')
+});
